@@ -1,7 +1,7 @@
 "use client";
 
+import "@solana/wallet-adapter-react-ui/styles.css";
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
-require("@solana/wallet-adapter-react-ui/styles.css");
 
 const WalletMultiButtonComp = () => {
   return <WalletMultiButton />;

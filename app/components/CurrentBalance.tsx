@@ -11,10 +11,6 @@ const CurrentBalanceComp = () => {
 
   useEffect(() => {
     const updateBalance = async () => {
-      if (!connection || !publicKey) {
-        // alert("Wallet not connected or connection unavailable");
-      }
-
       try {
         connection.onAccountChange(
           publicKey!,
@@ -33,6 +29,7 @@ const CurrentBalanceComp = () => {
         }
       } catch (error) {
         // alert("Failed to retrieve account info:");
+        console.log(error);
       }
     };
 

@@ -68,8 +68,8 @@ const FormComp = () => {
       return;
     } catch (err) {
       toast({
-        title: "Error",
-        description: "Something went wrong",
+        title: "Something went wrong",
+        description: `${err}`,
         variant: "destructive",
       });
     } finally {
